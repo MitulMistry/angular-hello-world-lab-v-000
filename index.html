@@ -1,16 +1,24 @@
 <!doctype html>
 <html>
-<head>
+  <head>
     <meta charset="utf-8">
 
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Angular Application</title>
-</head>
-<body>
+  </head>
+  <body>
+
+    <div class="app" ng-app="app">
+      <div ng-controller="MainController">
+        <p>Name: {{ name }}</p>
+        <p>Email: {{ email }}</p>
+        <p>Phone: {{ phone }}</p>
+      </div>
+    </div>
 
     <script src="js/angular.js"></script>
     <script src="js/app/app.js"></script>
     <script src="js/app/controllers/MainController.js"></script>
 
-</body>
+  </body>
 </html>
